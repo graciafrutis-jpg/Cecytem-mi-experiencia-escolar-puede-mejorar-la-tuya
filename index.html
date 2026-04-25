@@ -1,93 +1,99 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-<meta charset="UTF-8">
-<title>Mi experiencia escolar puede mejorar la tuya</title>
+    <meta charset="UTF-8">
+    <title>Mi experiencia escolar puede mejorar la tuya</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+        }
 
-<style>
-body{
-    margin:0;
-    font-family:Arial;
-}
+        header {
+            width: 100%;
+            background: white; /* Franja blanca arriba */
+            text-align: center;
+            padding: 5px 0; /* Menos espacio vertical */
+            color: #C2185D; /* Rosa fuerte */
+            font-size: 1.1em; /* Más pequeño */
+            z-index: 2;
+            text-shadow: 2px 2px 6px rgba(0,0,0,0.7);
+        }
 
-/* Título en franja blanca */
-header{
-    background:white;
-    padding:20px;
-    text-align:center;
-}
+        .contenedor {
+            position: relative;
+            width: 100%;
+            height: 100vh;
+            overflow: hidden;
+            margin-top: 0; /* Sin margen extra arriba */
+        }
 
-h1{
-    color:#C71585;
-    margin:0;
-}
+        .banner {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            display: block;
+        }
 
-/* CONTENEDOR (ahora ocupa toda la pantalla) */
-.contenedor{
-    position:relative;
-    width:100%;   /* ocupa todo */
-}
+        nav {
+            position: absolute;
+            top: 0; /* Pegado al inicio de la imagen */
+            left: 50%;
+            transform: translateX(-50%);
+            width: 85%;
+            background: rgba(255, 182, 193, 0.85);
+            border-radius: 30px;
+            padding: 10px 0;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+            z-index: 2;
+        }
 
-/* Imagen portada */
-.banner{
-    width:100%;
-    height:100vh;
-    object-fit:cover;
-    display:block;
-}
+        nav ul {
+            list-style: none;
+            display: flex;
+            justify-content: center;
+            margin: 0;
+            padding: 0;
+            flex-wrap: wrap;
+        }
 
-/* Menú encima de la imagen */
-nav{
-    position:absolute;
-    top:0;
-    width:100%;
-    background:#FFB6C1;
-}
+        nav ul li a {
+            padding: 12px 18px;
+            display: block;
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+            border-radius: 20px;
+            transition: 0.3s;
+        }
 
-nav ul{
-    list-style:none;
-    display:flex;
-    justify-content:center;
-    margin:0;
-    padding:0;
-}
-
-nav ul li a{
-    padding:15px 20px;
-    display:block;
-    color:white;
-    text-decoration:none;
-    font-weight:bold;
-}
-
-nav ul li a:hover{
-    background:#FFE4E1;
-}
-</style>
+        nav ul li a:hover {
+            background: #ffe4e1;
+            color: #C71585;
+        }
+    </style>
 </head>
 
 <body>
 
-<header>
-<h1>Mi experiencia escolar puede mejorar la tuya</h1>
-</header>
+    <header>
+        <h1>Mi experiencia escolar puede mejorar la tuya</h1>
+    </header>
 
-<div class="contenedor">
-
-    <nav>
-    <ul>
-    <li><a href="abandono.html">Abandono</a></li>
-    <li><a href="concecuencias.html">Consecuencias</a></li>
-    <li><a href="testimonios.html">Testimonios</a></li>
-    <li><a href="prevencion.html">Prevención</a></li>
-    <li><a href="familia.html">Familia</a></li>
-    <li><a href="apoyo.html">Apoyo</a></li>
-    </ul>
-    </nav>
-
-    <img src="PRINCIPAL.jpeg" class="banner">
-
-</div>
+    <div class="contenedor">
+        <img src="PRINCIPAL.jpeg" class="banner" alt="Imagen principal">
+        
+        <nav>
+            <ul>
+                <li><a href="abandono.html">Abandono</a></li>
+                <li><a href="concecuencias.html">Consecuencias</a></li>
+                <li><a href="testimonios.html">Testimonios</a></li>
+                <li><a href="prevencion.html">Prevención</a></li>
+                <li><a href="familia.html">Familia</a></li>
+                <li><a href="apoyo.html">Apoyo</a></li>
+            </ul>
+        </nav>
+    </div>
 
 </body>
 </html>
